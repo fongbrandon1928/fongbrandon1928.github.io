@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #gameBoard {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 5px;
+            margin: 20px auto;
+        }
+        .cell {
+            width: 100px;
+            height: 100px;
+            background-color: #e1e1e1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 72px;
+            cursor: pointer;
+        }
+        #restartButton {
+        display: none;
+        margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tic-Tac-Toe</h1>
+    </header>
+    <div id="gameBoard"></div>
+    <p id="status"></p>
+    <button id="restartButton">Restart Game</button>
+    <footer>
+        <p>Back to <a href="index.html">homepage</a>.</p>
+    </footer>
+    <script src="tic-tac-toe.js"></script>
+</body>
+</html>

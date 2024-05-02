@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Snake game</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        canvas {
+            display: block;
+            background: black;
+            width: 35%;
+            height: 35%;
+            image-rendering: pixelated;
+            margin: 0 auto;
+        }
+
+        .controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: center;
+            margin: 5px 0;
+        }
+
+        .controls button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script src="snake.js"></script>
+</head>
+
+<body onload="init();">
+    <header>
+        <h1>Snake</h1>
+    </header>
+    <canvas id="myCanvas" width="300" height="300">
+    </canvas>
+    <div class="controls">
+        <div class="button-row">
+            <button id="upBtn">Up</button>
+        </div>
+        <div class="button-row">
+            <button id="leftBtn">Left</button>
+            <button id="rightBtn">Right</button>
+        </div>
+        <div class="button-row">
+            <button id="downBtn">Down</button>
+        </div>
+    </div>
+    <footer>
+        <p>Back to <a href="index.html">homepage</a>.</p>
+    </footer>
+</body>
+
+</html>
