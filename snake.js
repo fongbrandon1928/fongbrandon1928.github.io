@@ -277,19 +277,14 @@ document.addEventListener("keydown", function (event) {
         event.preventDefault();
     }
 
-    // Add your game logic here to move the snake based on the arrow key pressed
     switch (event.key) {
         case "ArrowUp":
-            // Move the snake up
             break;
         case "ArrowDown":
-            // Move the snake down
             break;
         case "ArrowLeft":
-            // Move the snake left
             break;
         case "ArrowRight":
-            // Move the snake right
             break;
     }
 });
