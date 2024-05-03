@@ -126,7 +126,7 @@ function gameOver() {
     ctx.fillStyle = 'white';
     ctx.textBaseline = 'middle';
     ctx.textAlign = 'center';
-    ctx.font = 'normal bold 40px serif';
+    ctx.font = 'normal bold 40px Jaro';
 
     ctx.fillText('Game over', C_WIDTH / 2, C_HEIGHT / 2);
 }
